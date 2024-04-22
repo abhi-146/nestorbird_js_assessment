@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    Date: <h1 id="currentDate"></h1>
+    <button onclick="showTaskPopup()">Create Task</button>
+    <div id="scheduler">
+
+        Select Date: <input type="date" id="curr-Date"><br><br>
+        <div class="all-time-slots"></div>
+
+        <div class="popup" id="taskPopup">
+            <h3>Create Task</h3>
+            <input type="text" id="taskTitle" placeholder="Task Title"><br><br>
+            Date: <input type="date" id="taskDate"><br><br>
+            Start Time: <input type="time" id="taskStartTime"><br><br>
+            End Time: <input type="time" id="taskEndTime"><br><br>
+
+            <button onclick="addTask()">Create Task</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
